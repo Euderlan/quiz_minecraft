@@ -8,11 +8,13 @@ void main() {
   final String nomeJogador = lerNomeJogador();
   print('\nÓtimo te ver por aqui, $nomeJogador! Prepare seu inventário.\n');
 
+  final perguntasDaPartida = List.of(perguntasMinecraft)..shuffle();
+
   int acertos = 0;
-  final int totalPerguntas = perguntasMinecraft.length;
+  final int totalPerguntas = perguntasDaPartida.length;
 
   for (int i = 0; i < totalPerguntas; i++) {
-    final pergunta = perguntasMinecraft[i];
+    final pergunta = perguntasDaPartida[i];
 
     exibirPergunta(pergunta, i, totalPerguntas);
 

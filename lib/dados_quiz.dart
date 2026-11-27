@@ -102,6 +102,51 @@ const List<Pergunta> perguntasMinecraft = [
     mensagemErro:
         'Não deu para teleportar dessa vez, {nome}! A resposta certa é A (Pérola do Ender).',
   ),
+  Pergunta(
+    enunciado:
+        'Qual ingrediente especial é usado para produzir uma Poção de Visão Noturna no Alambique?',
+    alternativas: {
+      'A': 'Pó de Blaze',
+      'B': 'Cenoura Dourada',
+      'C': 'Membrana de Phantom',
+      'D': 'Lágrima de Ghast',
+    },
+    respostaCorreta: 'B',
+    mensagemAcerto:
+        'Alquimia de mestre, {nome}! Cenoura Dourada após a água estranha garante Visão Noturna.',
+    mensagemErro:
+        'Quase na bancada de poções, {nome}! A alternativa correta é B (Cenoura Dourada).',
+  ),
+  Pergunta(
+    enunciado:
+        'Qual criatura hostil do bioma Deep Dark ataca com onda sônica e detecta vibrações/sons?',
+    alternativas: {
+      'A': 'Wither Skeleton',
+      'B': 'Vex',
+      'C': 'Warden',
+      'D': 'Shulker',
+    },
+    respostaCorreta: 'C',
+    mensagemAcerto:
+        'Silêncio absoluto, {nome}! Você reconheceu o Warden e seu ataque sônico.',
+    mensagemErro:
+        'Cuidado com o barulho, {nome}! A resposta certa é C — o Warden é o guardião do Deep Dark.',
+  ),
+  Pergunta(
+    enunciado:
+        'Para invocar o chefe Wither no formato de "T" com blocos de areia/terra das almas, quantos Crânios de Esqueleto Wither são necessários?',
+    alternativas: {
+      'A': '2 crânios',
+      'B': '3 crânios',
+      'C': '4 crânios',
+      'D': '5 crânios',
+    },
+    respostaCorreta: 'B',
+    mensagemAcerto:
+        'Invocação concluída, {nome}! São exatamente 3 Crânios de Esqueleto Wither no topo.',
+    mensagemErro:
+        'Quase invocou errado, {nome}! A alternativa correta é B (3 crânios).',
+  ),
 ];
 
 String mensagemFinalPorDesempenho(String nome, int acertos, int total) {
